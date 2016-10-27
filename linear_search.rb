@@ -1,15 +1,13 @@
-list = Array.new()
+# Linear Search - 線形探索法
+# 先頭から順番に探す
+
 list = [10, 25, 11, 33 ,12, 13, 14, 15]
 
 def search( list, obj )
-  
-  for i in list do
-    if obj == i
-      p i
-      p 'find obj'
-      break
-    end
-    p 'skip' + i.to_s
+
+  list.each do |num|
+    puts num
+    puts "Found!!!#{num}" if num == obj
   end
 
 end
